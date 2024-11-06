@@ -35,7 +35,7 @@ const App = () => {
       <Navbar icon={icon} toggleColorMode={toggleColorMode} />
       <Routes>
         <Route path="/" element={ <HomePage /> } />
-        <Route path="/create" element={ <CreatePage /> } />
+        <Route path="/create" element={ <CreatePage colorMode={colorMode} /> } />
       </Routes>
     </div>
   )
