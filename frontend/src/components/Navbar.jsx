@@ -13,13 +13,13 @@ const Navbar = ({icon, toggleColorMode}) => {
             <div className='flex items-center gap-2'>
               <div>
               <Link to={"/create"}>
-                  <button className='bg-gray-500 border-none p-2 rounded'>
+                  <button className='bg-sky-500 border-none p-2 rounded hover:bg-sky-400'>
                     <BsPlusSquare />
                   </button> 
                 </Link>
               </div>
               <div>
-              <button onClick={toggleColorMode} className='bg-gray-500 border-none p-2 rounded'>
+              <button onClick={toggleColorMode} className='bg-sky-500 border-none p-2 rounded hover:bg-sky-400'>
                 {icon}
               </button>
               </div>     

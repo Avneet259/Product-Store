@@ -25,12 +25,12 @@ const CreatePage = ({colorMode}) => {
   return (
     <div className='max-w-screen-sm m-auto'>
       <div className='flex flex-col gap-8 items-center'>
-        <h1 className='font-bold p-4 text-3xl mb-8'>Create New Product</h1>
-        <div className='w-full p-6 bg-gray-900 rounded-lg shadow-md'>
+        <h1 className='font-bold p-4 text-3xl mb-8 text-sky-300'>Create New Product</h1>
+        <div style={colorMode} className='w-full p-6 rounded-lg shadow-md'>
           <div className='flex flex-col tracking-wide'>
-            <input style={colorMode} className='m-4 p-2 rounded bg-gray-900 border border-gray-700' type="text" name="name" value={newProduct.name} placeholder='Product Name' onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value})}/>
-            <input style={colorMode} className='m-4 p-2 rounded bg-gray-900 border border-gray-700' type="text" name="price" value={newProduct.price} placeholder='Product Price' onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value})}/>
-            <input style={colorMode} className='m-4 p-2 rounded bg-gray-900 border border-gray-700' type="text" name="name" value={newProduct.image} placeholder='Product Image' onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value})}/>
+            <input style={colorMode} className='m-4 p-2 rounded border border-gray-700' type="text" name="name" value={newProduct.name} placeholder='Product Name' onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value})}/>
+            <input style={colorMode} className='m-4 p-2 rounded border border-gray-700' type="text" name="price" value={newProduct.price} placeholder='Product Price' onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value})}/>
+            <input style={colorMode} className='m-4 p-2 rounded border border-gray-700' type="text" name="name" value={newProduct.image} placeholder='Product Image' onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value})}/>
             <button onClick={handleAddProduct} className='bg-sky-300  m-4 p-2 rounded'>Add Product</button>
           </div>
         </div>
