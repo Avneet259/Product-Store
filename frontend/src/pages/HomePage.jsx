@@ -9,7 +9,6 @@ const HomePage = () => {
   useEffect(() => {
     fetchProducts()
   }, [fetchProducts])
-  console.log("products", products)
 
   return (
     <div className='max-w-full py-12'>
